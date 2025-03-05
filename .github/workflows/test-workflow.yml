@@ -7,13 +7,12 @@ on:
       - development
   workflow_dispatch:
 
-
 jobs:
   OutputToLog:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4.2.2
-        with:
-          repository: actions/checkout
-  
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: List files in repository
+        run: ls -R
