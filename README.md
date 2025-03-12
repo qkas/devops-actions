@@ -1,2 +1,1 @@
-#Simple workflow test
-hello world
+Simple workflow test
